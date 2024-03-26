@@ -1,0 +1,12 @@
+C:\Users\inter\Documents\Projects\C#\Main Projects\GeometryApp\GeometryApp\GeometryApp\GeometryLibrary\bin\Debug\net8.0\GeometryLibrary.deps.json
+C:\Users\inter\Documents\Projects\C#\Main Projects\GeometryApp\GeometryApp\GeometryApp\GeometryLibrary\bin\Debug\net8.0\GeometryLibrary.dll
+C:\Users\inter\Documents\Projects\C#\Main Projects\GeometryApp\GeometryApp\GeometryApp\GeometryLibrary\bin\Debug\net8.0\GeometryLibrary.pdb
+C:\Users\inter\Documents\Projects\C#\Main Projects\GeometryApp\GeometryApp\GeometryApp\GeometryLibrary\obj\Debug\net8.0\GeometryLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\inter\Documents\Projects\C#\Main Projects\GeometryApp\GeometryApp\GeometryApp\GeometryLibrary\obj\Debug\net8.0\GeometryLibrary.AssemblyInfoInputs.cache
+C:\Users\inter\Documents\Projects\C#\Main Projects\GeometryApp\GeometryApp\GeometryApp\GeometryLibrary\obj\Debug\net8.0\GeometryLibrary.AssemblyInfo.cs
+C:\Users\inter\Documents\Projects\C#\Main Projects\GeometryApp\GeometryApp\GeometryApp\GeometryLibrary\obj\Debug\net8.0\GeometryLibrary.csproj.CoreCompileInputs.cache
+C:\Users\inter\Documents\Projects\C#\Main Projects\GeometryApp\GeometryApp\GeometryApp\GeometryLibrary\obj\Debug\net8.0\GeometryLibrary.sourcelink.json
+C:\Users\inter\Documents\Projects\C#\Main Projects\GeometryApp\GeometryApp\GeometryApp\GeometryLibrary\obj\Debug\net8.0\GeometryLibrary.dll
+C:\Users\inter\Documents\Projects\C#\Main Projects\GeometryApp\GeometryApp\GeometryApp\GeometryLibrary\obj\Debug\net8.0\refint\GeometryLibrary.dll
+C:\Users\inter\Documents\Projects\C#\Main Projects\GeometryApp\GeometryApp\GeometryApp\GeometryLibrary\obj\Debug\net8.0\GeometryLibrary.pdb
+C:\Users\inter\Documents\Projects\C#\Main Projects\GeometryApp\GeometryApp\GeometryApp\GeometryLibrary\obj\Debug\net8.0\ref\GeometryLibrary.dll
