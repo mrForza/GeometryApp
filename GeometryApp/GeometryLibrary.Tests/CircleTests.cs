@@ -8,15 +8,15 @@ public class CircleTests
     [Test]
     public void TestCircleConstructorWithNegativeRadius()
     {
-        var radius = -12.5;
-        var name = "Test circle name #1";
-        bool isGeometryExceptionWasOccured = false;
+        const double radius = -12.5;
+        const string name = "Test circle name #1";
+        var isGeometryExceptionWasOccured = false;
         
         try
         {
-            var triangle = new Circle(name, radius);
+            var circle = new Circle(name, radius);
         }
-        catch (GeometryException geometryException)
+        catch (GeometryException)
         {
             isGeometryExceptionWasOccured = true;
         }
@@ -27,15 +27,15 @@ public class CircleTests
     [Test]
     public void TestCircleConstructorWithZeroRadius()
     {
-        var radius = 0;
-        var name = "Test circle name #2";
-        bool isGeometryExceptionWasOccured = false;
+        const int radius = 0;
+        const string name = "Test circle name #2";
+        var isGeometryExceptionWasOccured = false;
         
         try
         {
-            var triangle = new Circle(name, radius);
+            var circle = new Circle(name, radius);
         }
-        catch (GeometryException geometryException)
+        catch (GeometryException)
         {
             isGeometryExceptionWasOccured = true;
         }
@@ -44,10 +44,10 @@ public class CircleTests
     }
     
     [Test]
-    public void TestCircumference()
+    public void TestCircumferenceSimple()
     {
-        var radius = 1.854;
-        var name = "Test circle name #3";
+        const double radius = 1.854;
+        const string name = "Test circle name #3";
 
         var circle = new Circle(name, radius);
 
@@ -55,13 +55,35 @@ public class CircleTests
     }
     
     [Test]
-    public void TestCircleSquare()
+    public void TestCircleSquareSimple()
     {
-        var radius = 1.854;
-        var name = "Test circle name #3";
+        const double radius = 1.854;
+        const string name = "Test circle name #3";
 
         var circle = new Circle(name, radius);
 
         Assert.That(Math.Abs(circle.Square - 10.79864669).CompareTo(0.0000001), Is.EqualTo(-1));
+    }
+    
+    [Test]
+    public void TestCircumferenceHard()
+    {
+        const double radius = 1215.5323564;
+        const string name = "Test circle name #4";
+
+        var circle = new Circle(name, radius);
+
+        Assert.That(Math.Abs(circle.Perimeter - 7637.41504213).CompareTo(0.0000001), Is.EqualTo(-1));
+    }
+    
+    [Test]
+    public void TestCircleSquareHard()
+    {
+        const double radius = 1215.5323564;
+        const string name = "Test circle name #4";
+
+        var circle = new Circle(name, radius);
+
+        Assert.That(Math.Abs(circle.Square - 4641762.55148488).CompareTo(0.0000001), Is.EqualTo(-1));
     }
 }

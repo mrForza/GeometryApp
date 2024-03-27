@@ -132,7 +132,33 @@ public class TriangleTests
     }
     
     [Test]
-    public void TestTrianglePerimeter()
+    public void TestTrianglePerimeterSimple()
+    {
+        var firstSide = 11.5;
+        var secondSide = 8.75;
+        var thirdSide = 7;
+        var name = "ABC";
+        
+        var triangle = new Triangle(name, firstSide, secondSide, thirdSide);
+
+        Assert.That(Math.Abs(triangle.Perimeter - 27.25).CompareTo(0.0000001), Is.EqualTo(-1));
+    }
+    
+    [Test]
+    public void TestTriangleSquareSimple()
+    {
+        var firstSide = 11.5;
+        var secondSide = 8.75;
+        var thirdSide = 7;
+        var name = "ABC";
+        
+        var triangle = new Triangle(name, firstSide, secondSide, thirdSide);
+        
+        Assert.That(Math.Abs((triangle.Square - 30.57933058)).CompareTo(0.0000001), Is.EqualTo(-1));
+    }
+    
+    [Test]
+    public void TestTrianglePerimeterHard()
     {
         var firstSide = 3.1158720;
         var secondSide = 4.32785;
@@ -141,11 +167,11 @@ public class TriangleTests
         
         var triangle = new Triangle(name, firstSide, secondSide, thirdSide);
 
-        Assert.That(triangle.Perimeter, Is.EqualTo(12.88029736));
+        Assert.That(Math.Abs(triangle.Perimeter - 12.88029736).CompareTo(0.0000001), Is.EqualTo(-1));
     }
     
     [Test]
-    public void TestTriangleSquare()
+    public void TestTriangleSquareHard()
     {
         var firstSide = 3.1158720;
         var secondSide = 4.32785;
@@ -179,5 +205,17 @@ public class TriangleTests
         
         var triangle = new Triangle(name, firstSide, secondSide, thirdSide);
         Assert.That(triangle.IsRightTriangle(), Is.EqualTo(false));
+    }
+    
+    [Test]
+    public void TestTriangleIsRightWithRoots()
+    {
+        var firstSide = 1.0;
+        var secondSide = Math.Sqrt(2);
+        var thirdSide = Math.Sqrt(3);
+        var name = "ABC";
+        
+        var triangle = new Triangle(name, firstSide, secondSide, thirdSide);
+        Assert.That(triangle.IsRightTriangle(), Is.EqualTo(true));
     }
 }

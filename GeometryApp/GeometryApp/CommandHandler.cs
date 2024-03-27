@@ -68,7 +68,8 @@ public class CommandHandler(BaseFigureCreator? creator)
                         _creator = new CustomPolygonCreator();
                         break;
                     default:
-                        Console.WriteLine("You should pass a correct command!\n");
+                        Console.ForegroundColor = ConsoleColor.DarkRed;
+                        Console.WriteLine("\nYou should pass a correct command!\n");
                         break;
                 }
 

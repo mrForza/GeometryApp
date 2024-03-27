@@ -12,7 +12,7 @@ public class CustomPolygon : Figure
     
     protected sealed override double _calculatePerimeter()
     {
-        return _verticesCoordinates.Sum(coordinates => coordinates.Item1 + coordinates.Item2);
+        throw new NotImplementedException("This part of task has not been implemented yet");
     }
 
     protected sealed override double _calculateSquare()
@@ -20,7 +20,7 @@ public class CustomPolygon : Figure
         var firstSum = 0.0;
         var secondSum = 0.0;
 
-        for (int i = 1; i < _verticesCoordinates.Count; ++i)
+        for (var i = 1; i < _verticesCoordinates.Count; ++i)
         {
             firstSum += _verticesCoordinates[i - 1].Item1 * _verticesCoordinates[i].Item2;
             secondSum += _verticesCoordinates[i].Item1 * _verticesCoordinates[i - 1].Item2;
@@ -33,11 +33,9 @@ public class CustomPolygon : Figure
 
     public CustomPolygon(List<Tuple<double, double>> verticesCoordinates)
     {
-        CustomPolygonValidator.ValidateCoordinates(verticesCoordinates);
-
         _verticesCoordinates = verticesCoordinates;
 
-        Perimeter = _calculatePerimeter();
+        // Perimeter = _calculatePerimeter(); NOT IMPLEMENTED
         Square = _calculateSquare();
     }
 
@@ -46,7 +44,6 @@ public class CustomPolygon : Figure
         Console.ForegroundColor = ConsoleColor.DarkGreen;
         return "\n" + $"""
                        Custom polygon
-                       Perimeter: {Perimeter}
                        Square: {Square}
                        """;
     }
